@@ -5,10 +5,12 @@ $("#currentDay").text(today);
 // Time (Hour only)
 let hour = moment().format("HH");
 
+
 // Save button on click, save each appointments when booked
-$(".saveBtn").on("click", function (event) {
-    const textEl = document.querySelectorAll("textarea")
+$("saveBtn").on("click", function (event) {
+    const textEl = document.getElementsByClassName("col-md-10 description");
     localStorage.setItem("Appointment9", textEl.text);
+ 
 
 })
 
