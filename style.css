@@ -70,10 +70,4 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-.col-5.description:hover {
-  border: 2px solid blue;
 
-}
-.col-1.hour:hover {
-  color: blue;
-}
