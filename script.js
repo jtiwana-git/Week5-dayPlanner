@@ -1,5 +1,6 @@
 let today = moment().format("dddd Do MMMM YYYY");
 // Time of day on html
+
 $("#currentDay").text(today);
 
 // Time - will display (Hour only)
@@ -8,13 +9,23 @@ console.log(hour);
 
 
 // Save button on click, save each appointments when booked
-$("saveBtn").on("click", function (event) {
-    const textEl = document.getElementById("09");
+$(".saveBtn").on("click", function (event) {
+var timeBlock = $("#09");
 
-$("09").localStorage.setItem("Appointment9", JSON.stringify(textEl.value));
+timeBlock = localStorage.setItem("Appt", JSON.stringify(timeBlock));
+
+
+
+
+
+    //     const textEl = document.getElementById("09");
+
+// $("09").localStorage.setItem("Appointment9", JSON.stringify(textEl.value));
  
 
-})
+});
+
+console.log(localStorage);
 
 // will change colour (block) depending on the time
 $("div").each(function () {
