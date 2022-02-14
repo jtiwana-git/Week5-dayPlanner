@@ -10,9 +10,8 @@ console.log(hour);
 
 // Save button on click, save each appointments when booked
 $(".saveBtn").on("click", function (event) {
-var timeBlock = $("#09");
-
-timeBlock = localStorage.setItem("Appt", JSON.stringify(timeBlock));
+var timeBlock = $('#09');
+localStorage.setItem("Block-09am", JSON.stringify(timeBlock));
 
 
 
