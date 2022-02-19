@@ -5,31 +5,25 @@ $("#currentDay").text(today);
 
 // Time - will display (Hour only)
 let hour = moment().format("HH");
-console.log(hour);
+
 
 
 // Save button on click, save each appointments when booked
 $(".saveBtn").on("click", function (event) {
-var timeBlock = $('#09');
-localStorage.setItem("Block-09am", JSON.stringify(timeBlock));
+var value = $(this).siblings(".description").val();
+var time =$(this).parent().attr("data-time");
 
-
-
-
-
-    //     const textEl = document.getElementById("09");
-
-// $("09").localStorage.setItem("Appointment9", JSON.stringify(textEl.value));
- 
+localStorage.setItem(`block-${time}`, value);
+localStorage.getItem(`block-${time}`);
 
 });
 
-console.log(localStorage);
+
 
 // will change colour (block) depending on the time
 $("div").each(function () {
     let workTime = parseInt($(this).attr("data-time"));
-    console.log (workTime);
+  
     if (workTime > hour) {
         $(this).addClass("future")
 

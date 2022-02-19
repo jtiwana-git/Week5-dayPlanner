@@ -1,11 +1,4 @@
-My thoughts - https://jtiwana-git.github.io/Week5-dayPlanner/ 
-
-Started the coding using a mix of Javascript and Jquery. Over time the code started to break down (the errors was going back to the right beginning of my code even though this was workinng fine.  I later realised that it was the html code that had a missing "<" on a div tag) 
-Adding the day display on the web page was ok. The hardest part was linking the html and Javascript (hours) and also local storage - still trying to complete this part
-
-
-
-
+https://jtiwana-git.github.io/Week5-dayPlanner/ 
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
@@ -19,27 +12,12 @@ I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 ```
 
-## Acceptance Criteria
+## Summary
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
+For the day planner, the technologies that use fontawesome, moment and bootstrap as a third party styling, html, css and Jquery.  I used local storage to save the data for the time slots
 
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
+The program has time slots from 9am in the morning until 5pm.  For any hours, the user can add a comment in the block and then press the save icon.  
 
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-
-WHEN I click into a timeblock
-THEN I can enter an event
-
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-
-WHEN I refresh the page
-THEN the saved events persist
-
+There are three colours that are in use to define the hour - past hours, current hour and future hours
 
 
