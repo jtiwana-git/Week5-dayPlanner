@@ -14,7 +14,6 @@ var value = $(this).siblings(".description").val();
 var time =$(this).parent().attr("data-time");
 
 localStorage.setItem(`block-${time}`, value);
-localStorage.getItem(`block-${time}`);
 
 });
 

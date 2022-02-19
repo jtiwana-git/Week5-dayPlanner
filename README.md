@@ -18,6 +18,11 @@ For the day planner, the technologies that use fontawesome, moment and bootstrap
 
 The program has time slots from 9am in the morning until 5pm.  For any hours, the user can add a comment in the block and then press the save icon.  
 
-There are three colours that are in use to define the hour - past hours, current hour and future hours
+There are three colours that are in use to define the hour - past hour, current hour and future hours
+
+please see screen shots
+
+![A demo gif of the working local storage](assets\image\Day-Planner-LS.gif)
+
 
 
